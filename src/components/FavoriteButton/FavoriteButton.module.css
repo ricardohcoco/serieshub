@@ -1,0 +1,45 @@
+.favorite {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  border: 1px solid #ffffff40;
+  border-radius: 50%;
+  background: #111e;
+  color: #f5f5f1;
+  backdrop-filter: blur(8px);
+  cursor: pointer;
+  transition: color 180ms ease, background 180ms ease, border-color 180ms ease, transform 180ms ease;
+}
+
+.favorite svg {
+  flex-shrink: 0;
+  transition: transform 180ms ease;
+}
+
+.favorite[aria-label="Remover dos favoritos"] {
+  border-color: #e5091480;
+  background: #351014ed;
+  color: #ff3341;
+}
+
+@media (hover: hover) {
+  .favorite:hover {
+    border-color: #ff3341;
+    background: #351014;
+    color: #ff3341;
+  }
+
+  .favorite:hover svg { transform: scale(1.12); }
+}
+
+.favorite:active { transform: scale(0.94); }
+.favorite:focus-visible { outline: 2px solid #fff; outline-offset: 4px; }
+
+@media (prefers-reduced-motion: reduce) {
+  .favorite, .favorite svg { transition: none; }
+  .favorite:active, .favorite:hover svg { transform: none; }
+}

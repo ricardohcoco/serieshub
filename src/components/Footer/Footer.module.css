@@ -1,0 +1,22 @@
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  padding: 28px clamp(20px, 4vw, 64px);
+  border-top: 1px solid #ffffff0d;
+  background: #0b0b0b;
+  color: #888;
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+.footer p { margin: 0; }
+
+@media (max-width: 600px) {
+  .footer {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+  }
+}
