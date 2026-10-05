@@ -1,4 +1,4 @@
-# 🎬 CineHub
+# 🎬 SeriesHub
 
 O **SeriesHub** é uma aplicação web desenvolvida com React e TypeScript para consulta e gerenciamento de séries favoritas.
 
